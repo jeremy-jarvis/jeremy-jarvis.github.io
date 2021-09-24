@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Powerful Visual Testing with Applitools"
-date:   2021-05-09 16:46:07 -0400
+date:   2021-09-24 12:46:07 -0400
 tags: [applitools, quality assurance, testing, visual testing, verification, cucumber, protractor, chai]
 ---
 
