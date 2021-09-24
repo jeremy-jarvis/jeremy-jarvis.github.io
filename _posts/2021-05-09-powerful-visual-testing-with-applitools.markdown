@@ -99,6 +99,6 @@ The baseline and change detection features I describe above are part of Applitoo
 
 Overall, my experience with Applitools has been a great one. It has made a big impact on my testing outlook, and I look forward to using it in the future.
 
-I feel like it is such a compelling tool that I have written up [a walk-through](https://jeremy-jarvis.github.io/applitools-demo/) of how to use Applitools with Cucumber, Protractor, and Chai to verify the visual appearance of Angular apps. That walk-though is paired with [a GitHub repo](https://github.com/jeremy-jarvis/applitools-demo) that demonstrates these tools being used together. 
+I feel like Applitools is such a compelling tool that I have written up a [step by step walk-through](https://jeremy-jarvis.github.io/applitools-demo/) of how to use it with Cucumber, Protractor, and Chai to test the visual appearance of Angular apps. I have also created a related [GitHub repo](https://github.com/jeremy-jarvis/applitools-demo) to demonstrate how those tools can be used together.
 
-I hope this article and the resources above will help you accelerate your visual testing suite. Happy testing!
+Happy testing!
