@@ -1,21 +1,22 @@
 ---
 layout: post
 title:  "Powerful Visual Testing with Applitools"
-date:   2021-09-24 12:46:07 -0400
+date:   2021-09-28 12:30:00 -0500
 tags: [applitools, quality assurance, testing, visual testing, verification, cucumber, protractor, chai]
+thumbnail-img: /assets/images/hold-on-to-your-butts-thumbnail.jpg
+share-description: "This is a brief description."
 ---
 
-Hold on to your butts because I recently had a great experience with automated visual testing.
+Up until last year, I had a long-standing impression that automated visual testing was a difficult nut to crack. Simple screenshot comparison tools can be finicky, and doing it manually can take years off your life. Believe me, I know. It's rough. Figuring out how to verify an app's visual appearance can feel like being stuck between a rock and a hard place, with no easy answers in sight. 
 
-![Hold on to your butts](/assets/images/hold-on-to-your-butts.jpeg)
+Well, hold on to your butts because I recently had a great experience with automated visual testing.
 
-I am going to level with you on something. Up until last year, I had a long-standing impression that automated visual testing was a historically difficult nut to crack. Simple screenshot comparison tools can be finicky, and doing it manually can take years off your life. Believe me, I know. It's rough. Figuring out how to verify an app's visual appearance can feel like being stuck between a rock and a hard place, with no easy answers in sight. 
+[![Hold on to your butts](/assets/images/hold-on-to-your-butts.jpeg){: .image-center }](https://youtu.be/3YlZmFD7-n8)
 
-I recently had the pleasure of using Applitools to verify the visual appearance of a web app. It was actually pretty awesome. Applitools made it possible for us to automate our visual testing. It greatly reduced how long it took to run our tests. This allowed us to keep tabs our app's appearance along the way and catch visual bugs soon after they were introduced.
-
-[![Applitools Logo](/assets/images/Applitools_Logo.jpg)](https://applitools.com)
+During a recent project, I had the pleasure of using Applitools to verify the visual appearance of a web app. It was actually pretty awesome. Applitools made it possible for us to automate our visual testing. It greatly reduced how long it took to run our tests. This allowed us to keep tabs our app's appearance along the way and catch visual bugs soon after they were introduced.
 
 I am writing this article to share a bit of my journey and give you a glimpse into what amazing things are possible with Applitools' visual testing suite.
+[![Applitools Logo](/assets/images/Applitools_Logo.jpg)](https://applitools.com){: .image-center }
 
 # The Quest for "Right"
 If you have ever developed a website or app with a UI, you probably know what it's like to spend countless hours tweaking its appearance. This can involve adjusting the alignment of elements of the screen, the fonts, the colors, and how information is displayed. Naturally, you want it to look right. It's probably your job to make sure it looks right.
@@ -128,6 +129,6 @@ Overall, my experience with Applitools has been a great one. It has made a big i
 
 I feel like Applitools is such a compelling tool that I have written up a [step by step walk-through](https://jeremy-jarvis.github.io/applitools-demo/) of how to use it with Cucumber, Protractor, and Chai to test the visual appearance of Angular apps. I have also created a related [GitHub repo](https://github.com/jeremy-jarvis/applitools-demo) to demonstrate how those tools can be used together. I hope that you find these resources to be helpful.
 
-[![Step-by-step Applitools Walk-Through](/assets/images/applitools-demo.jpg){: .image-center }](https://jeremy-jarvis.github.io/applitools-demo/)
+[![Step-by-step Applitools Walk-Through](/assets/images/applitools-demo.jpg){: .image-center.with-border }](https://jeremy-jarvis.github.io/applitools-demo/)
 
 Happy testing!
