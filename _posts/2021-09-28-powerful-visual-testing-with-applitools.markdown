@@ -23,21 +23,21 @@ If you have ever developed a website or app with a UI, you probably know what it
 
 But, how do we actually know that it is "right"? 
 
-# Ad-hoc Testing
-The first technique we probably all start with, at least informally, is ad-hoc testing. We navigate through our apps and look for things that feel "off". It's natural to do this, either as a part of developing an app, or as a basic way to "test" that our apps look right. Ad-hoc testing is useful and definitely has its place, but it can only go so far.
+# Ad hoc Testing
+The first technique we probably all start with, at least informally, is ad hoc testing. We navigate through our apps and look for things that feel "off". It's natural to do this, either as a part of developing an app, or as a basic way to "test" that our apps look right. Ad hoc testing is useful and definitely has its place, but it can only go so far.
 
-For one thing, ad-hoc testing can yield inconsistent results from day to day or person to person. One day, you might focus on a button's odd appearance and miss an obvious alignment problem. Someone else might focus on an entirely different problem and miss both of those issues. It can be hit and miss, which is why it helps to involve more than one person.
+For one thing, ad hoc testing can yield inconsistent results from day to day or person to person. One day, you might focus on a button's odd appearance and miss an obvious alignment problem. Someone else might focus on an entirely different problem and miss both of those issues. It can be hit and miss, which is why it helps to involve more than one person.
 
-Now, let's not poo-poo ad-hoc testing too much. Its lack of structure is actually a strength, because you can think outside the box with what you examine and try out. One limitation, though, is that it does not ensure full coverage of the app. That is simply not its purpose.
+Now, let's not poo-poo ad hoc testing too much. Its lack of structure is actually a strength, because you can think outside the box with what you examine and try out. One limitation, though, is that it does not ensure full coverage of the app. That is simply not its purpose.
 
 # Adding a Manual Visual Test Script
-Writing a manual visual test script is an important step into the world of consistent reproduceable testing. Following a script will allow you to verify that every screen in your app matches the UI design. Also, your testing is now reproducible by more than one person. This will make sure that no matter who executes the test script, every screen will be evaluated. Can we now dust off our hands and say "our job is done"? Well, not quite.
+Writing a manual visual test script is an important step into the world of consistent reproducible testing. Following a script will allow you to verify that every screen in your app matches the UI design. Also, your testing is now reproducible by more than one person. This will make sure that no matter who executes the test script, every screen will be evaluated. Can we now dust off our hands and say "our job is done"? Well, not quite.
 
 ![Manual test script](/assets/images/checklist.jpg){: .image-right }
 
 As great as this is, there are some significant limitations with using manual test scripts. For one, manual testing can be a tedious, time consuming, and susceptible to human error. Also, it relies on the design sensibilities of the person executing the test. He or she has to compare the app to the design and evaluate if there are "meaningful" differences. One tester might be more picky or strict in his or her evaluation, while a different tester is more lenient. Two people may have very different opinions about what looks "close enough." This can cause the test results to be influenced not only by the app's adherence to the UI designs, but also the ability for the tester to correctly identify those differences. Even if you use a diff tool to help identify the differences, the outcome can still be affected by differences in opinion between different testers. 
 
-Another downside is that it can take a long time to execute such manual testing. It can be very, very tedious. I think we can agree that when something takes a long time to do, we probably will avoid doing that thing very often. Just think about filing your taxes. Shudder... Thank goodness we only have to do that once per year! A team would likely de-prioritize such long and tedious testing in favor of more urgent work. Because of this, a team might go a long time between manual test executions, even waiting until just before release to execute the testing. I've totally been there.
+Another downside is that it can take a long time to execute such manual testing. It can be very, very tedious. I think we can agree that when something takes a long time to do, we probably will avoid doing that thing very often. Just think about filing your taxes. Shudder... Thank goodness we only have to do that once per year! A team would likely deprioritize such long and tedious testing in favor of more urgent work. Because of this, a team might go a long time between manual test executions, even waiting until just before release to execute the testing. I've totally been there.
 
 The problem with this is that infrequent testing, or "end of the project only" testing, delays a team's ability to find pesky visual design bugs until much later. This can cause an unfortunate surprise late in the project that requires rework, hitting at just the wrong time - when the project team is trying to get the app out the door.
 
@@ -56,14 +56,14 @@ As a brief aside, I should point out that Applitools doesn't just capture screen
 
 Using the [classic runner](https://applitools.com/tutorials/protractor.html#run-the-demo-app), I wrote NPM scripts to execute our visual tests on each web browser. To run the tests, I just ran each script one after the other - first for Chrome, then for Edge, then for IE, etc. This was much faster than testing manually. I could easily test all four browsers in a few hours, something that would take a few days to do manually.
 
-# Limitations of the IE Webdriver
+# Limitations of the IE WebDriver
 
-Applitools classic runner is a great tool, and I whole-heartedly recommend that you check it out. That being said, I discovered some limitations that required me to upgrade to Applitools Ultrafast Grid. Most of the issues centered around limitations in IE's webdriver.
+Applitools classic runner is a great tool, and I wholeheartedly recommend that you check it out. That being said, I discovered some limitations that required me to upgrade to Applitools Ultrafast Grid. Most of the issues centered around limitations in IE's WebDriver.
 
 ![IE Zombie](/assets/images/zomb-ie.png){: .image-right }
 > Oh IE... you relic of a different age... kept alive for reasons unknown to mortals. We have been cursed with supporting you. 
 
-When running my tests on IE, I discovered quirks that made it hard or impossible to capture full-page snapshots of our app. The problem was caused by a combination of our app's implementation and inflexibilities in the IE webdriver. It is possible the the issues have been fixed by now, but be aware: If you plan to support IE, then it would be worth evaluating Applitools' IE support to ensure that it meets your needs.
+When running my tests on IE, I discovered quirks that made it hard or impossible to capture full-page snapshots of our app. The problem was caused by a combination of our app's implementation and inflexibilities in the IE WebDriver. It is possible the the issues have been fixed by now, but be aware: If you plan to support IE, then it would be worth evaluating Applitools' IE support to ensure that it meets your needs.
 
 Fortunately, IE is end of life on June 15, 2022, so you probably won't need to worry about this.
 
@@ -71,9 +71,9 @@ These issues were mostly fixed when I upgraded to Applitools' [Ultrafast Grid](h
 
 # Browser Quirks
 
-One challenge of testing on multiple browsers is that they all behave a little bit differently. For example, one of our tests involved mousing over elements on the page to display tooltips. We discovered that the webdrivers varied in their coordinate systems. We couldn't just say "move the mouse to (X,Y)" because the relative origin of each coordinate system was in a different location. Some browsers had (0,0) in the top-left of the page. For at least one browser, the origin was inexplicably at the top-left corner of the entire OS window. To be clear, this wasn't a problem with Applitools. This was an inconsistency in the webdrivers used by Protractor and likely present in the browsers themselves. To work around this, we had to adjust our coordinates with different offsets for each browser. This better ensured that the mouse movements ended up in the same place on the page for each browser. We spent a lot of time investigating and fiddling with offsets to get that right.
+One challenge of testing on multiple browsers is that they all behave a little bit differently. For example, one of our tests involved mousing over elements on the page to display tooltips. We discovered that the WebDrivers varied in their coordinate systems. We couldn't just say "move the mouse to (X,Y)" because the relative origin of each coordinate system was in a different location. Some browsers had (0,0) in the top-left of the page. For at least one browser, the origin was inexplicably at the top-left corner of the entire OS window. To be clear, this wasn't a problem with Applitools. This was an inconsistency in the WebDrivers used by Protractor and likely present in the browsers themselves. To work around this, we had to adjust our coordinates with different offsets for each browser. This better ensured that the mouse movements ended up in the same place on the page for each browser. We spent a lot of time investigating and fiddling with offsets to get that right.
 
-Browser and web driver quirks meant that we had to configure our tests a bit differently for each browser. Such tweaking took time to get right, but it was necessary so that our tests ran consistently. In retrospect, it would have saved us a lot of time if we had just used Applitools' Ultrafast Grid from the beginning, but we were taking things one step at a time and hadn't yet drawn that conclusion. Some lessons take a while to learn.
+Browser and WebDriver quirks meant that we had to configure our tests a bit differently for each browser. Such tweaking took time to get right, but it was necessary so that our tests ran consistently. In retrospect, it would have saved us a lot of time if we had just used Applitools' Ultrafast Grid from the beginning, but we were taking things one step at a time and hadn't yet drawn that conclusion. Some lessons take a while to learn.
 
 # Taking it to the Next Level With Applitools Ultrafast Grid
 
