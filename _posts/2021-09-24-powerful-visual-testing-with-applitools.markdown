@@ -112,7 +112,9 @@ Here is a process to consider:
 1. The first time you run your tests Applitools will save the snapshots as the approved baselines.
 2. At this point, you should examine the snapshots and evaluate whether or not they look correct. If they don't, then fix the issues and re-run the tests.
 3. As your app is developed, re-execute your tests often to evaluate whether your app still looks "right".
-4. If changes are detected, you can either (A) accept them, which will save them as a new baseline, or (B) reject them, and add comments to describe what is wrong.
+4. If changes are detected, you can either:
+  * Accept them, which will save them as a new baseline, or 
+  * Reject them, and add comments to describe what is wrong.
 5. The approved baseline will progressively move forward as you accept expected changes throughout the course of the project, keeping a solid definition of "right" all along the way.
 6. When you are about to release, you can run your tests to see that the app still matches the baseline. This will give you confidence that the app will look correct when deployed.
 
