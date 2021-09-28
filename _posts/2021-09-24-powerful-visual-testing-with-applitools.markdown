@@ -5,9 +5,11 @@ date:   2021-09-24 12:46:07 -0400
 tags: [applitools, quality assurance, testing, visual testing, verification, cucumber, protractor, chai]
 ---
 
-Hold on to your hats because I recently had a great experience with automated visual testing.
+Hold on to your butts because I recently had a great experience with automated visual testing.
 
-I know... you probably can't believe it. Testing an app's visual  appearance is a historically hard problem to automate. Screenshot comparison tools can be finicky, and doing it manually can take years off your life. Believe me, I know. It's rough. 
+![Hold on to your butts](/assets/images/hold-on-to-your-butts.jpeg)
+
+I know... you probably can't believe it. Testing an app's visual appearance has been a hard problem to automate historically. Screenshot comparison tools can be finicky, and doing it manually can take years off your life. Believe me, I know. It's rough.
 
 I am writing this article because I recently had the pleasure of using Applitools to verify the visual appearance of a web app. It was actually pretty awesome. Applitools made it possible for us to automate our visual testing, something that is often notoriously difficult to automate. It greatly reduced how long it took to run our tests. This allowed us to keep tabs our app's appearance along the way and catch visual bugs soon after they were introduced.
 
@@ -17,12 +19,14 @@ If you have ever developed a website or app with a UI, you probably know what it
 But, how do we actually know that it is "right"? 
 
 # Starting with Ad-hoc Testing
-The first technique we probably all start with is ad-hoc testing. We navigate through our apps and look for things that feel "off". It's natural to do this, either as a part of developing an app, or as a basic way to "test" that it looks right. Such ad-hoc testing is useful and definitely has its place, but it can only go so far. For one thing, such ad-hoc testing can yield inconsistent results from day to day or person to person. One day, you might be so focused on a button's incorrect appearance that you miss an obvious alignment problem. Someone else might not even think to check either of those things and is focused on something else. It can be hit and miss. 
+The first technique we probably all start with is ad-hoc testing. We navigate through our apps and look for things that feel "off". It's natural to do this, either as a part of developing an app, or as a basic way to "test" that our apps look right. Such ad-hoc testing is useful and definitely has its place, but it can only go so far. For one thing, such ad-hoc testing can yield inconsistent results from day to day or person to person. One day, you might be so focused on a button's incorrect appearance that you miss an obvious alignment problem. Someone else might not even think to check either of those things and is focused on something else. It can be hit and miss.
 
 Now, let's not poo-poo ad-hoc testing too much. Its lack of structure is actually a strength, because you can think outside the box with what you examine and try out, but it doesn't ensure full coverage of the app. That simply isn't its purpose.
 
 # Graduating to a Manual Test Protocol
 So, you have decided to write a manual visual test protocol. Good. That is a step in the right direction! It will guide you through verifying that every screen in your app matches the UI design. Also, your testing is now reproducible by more than one person. This will make sure that no matter who executes the test protocol, every screen will be evaluated. Can we now dust off our hands and say "our job is done"? Well, not quite.
+
+![Manual protocol](/assets/images/checklist.jpg){: .image-right }
 
 As great as this is, there are some significant limitations with using manual protocols. For one, manual testing can be a tedious, time consuming, and susceptible to human error. Also, it relies on the design sensibilities of the person executing the test. He or she has to compare the app to the design and evaluate if there are "meaningful" differences. One tester might be more picky or strict in his or her evaluation, while a different tester is more lenient. Two people may have very different opinions about what looks "close enough." This can cause the test results to be influenced not only by the app's adherence to the UI designs, but also the ability for the tester to correctly identify those differences. Even if you use a diff tool to help identify the differences, the outcome can still be affected by differences in opinion between different testers. 
 
@@ -34,19 +38,25 @@ Infrequent testing or "end of the project only" testing delays a team's ability 
 
 While developing version 1 of our web app, we initially wrote a manual visual test protocol. It was the simplest thing to do, but it turned out to take a long time to get right and to execute. Our app needed to support four different browsers, so we had to execute the entire protocol four times. It took me nearly an entire week to execute across all of our supported browsers. Ugh. For version 2, we knew that something had to change, and that's when we starting looking at Applitools.
 
+![Automated testing](/assets/images/search-programming-gear.png){: .image-right }
+
 I got started with Applitools by poking around with Applitools' classic test runner. It enabled me to write automated tests using Protractor that would navigate our app to a particular page or state, and then take a snapshot of it. The snapshot was sent up to Applitools' web dashboard where I could view it and approve it. This created a "baseline" approved snapshot for that test. When I ran my test again, a new snapshot was taken and compared to the baseline. If Applitools Visual AI detected any differences, then it would flag them in the web dashboard, allowing me to review the differences and accept or reject them. I could flag any issues that needed be fixed. It was awesome.
 
 I should point out that the snapshots that Applitools captures aren't just screenshot images, they also include the page's DOM and CSS. This helps Applitools' Visual AI detect meaningful changes in the UI instead of flagging slight rendering inconsistencies. Its intelligent AI makes it possible to review the meaningful changes without drowning in a sea of tiny unimportant differences.
 
+![Applitools web dashboard with highlighted issues](/assets/images/web-dashboard-with-diff.png)
+*Applitools snapshot showing highlighted changes*
+
 Using the classic runner, I wrote NPM scripts to execute our visual tests on each web browser. To run the tests, I just ran each script one after the other - first for Chrome, then for Edge, then for IE, etc. This was much faster than testing manually. I could easily test all four browsers in a few hours, where as with manual testing it took a few days.
 
-# Limitations of the Classic Runner
+# Limitations of the IE Webdriver
 
-As great as Applitools' classic runner is, I discovered some limitations that required me to upgrade to Applitools Ultrafast Grid. Most of the issues centered around rough edges in their IE support.
+As great as Applitools' classic runner is, I discovered some limitations that required me to upgrade to Applitools Ultrafast Grid. Most of the issues centered around limitations in IE's webdriver.
 
-> Oh IE... you relic of a different age... kept alive for reasons unknown to mortals. We are cursed with supporting you. 
+![IE Zombie](/assets/images/zomb-ie.png){: .image-right }
+> Oh IE... you relic of a different age... kept alive for reasons unknown to mortals. We have been cursed with supporting you. 
 
-When running my tests on IE, I discovered quirks that made it hard or impossible to capture full-page snapshots of our app. The problem seemed to be a caused by a combination of our app's implementation and inflexibilities in the IE webdriver. It is possible the the issues have been fixed by now, but be warned: If you plan to support IE, then it would be worth evaluating Applitools' IE support to ensure that it meets your needs.
+When running my tests on IE, I discovered quirks that made it hard or impossible to capture full-page snapshots of our app. The problem seemed to be a caused by a combination of our app's implementation and inflexibilities in the IE webdriver. It is possible the the issues have been fixed by now, but be warned: If you plan to support IE, then it would be worth evaluating Applitools' IE support to ensure that it meets your needs. Fortunately, IE is end of life on June 15, 2022, so you probably won't need to worry about this.
 
 Ultimately, these issues were mostly fixed when I upgraded to Applitools Ultrafast Grid.
 
@@ -57,6 +67,8 @@ One challenge of testing on multiple browsers is that they all behave a little b
 Such browser and web driver quirks meant that we had to configure our tests a bit differently for each browser. Such tweaking took time to get right, but it was necessary so that our tests ran consistently. In retrospect, it would have saved us a lot of time if we had just used Applitools' Ultrafast Grid from the beginning, but we were taking things one step at a time and hadn't yet drawn that conclusion. 
 
 # Taking it to the Next Level With Applitools Ultrafast Grid
+
+![Ultrafast speedometer](/assets/images/speedometer-fast.png){: .image-right }
 
 Upgrading to the Ultrafast Grid was like a breath of fresh air combined with a kick of adrenaline. With it we were able to run our tests once on a single browser, but magically produce snapshots for multiple target browsers.
 
@@ -81,6 +93,8 @@ Fixes could be made while the related code was fresh in people's minds. No more 
 
 At the beginning of this article I asked how we can actually know that a web app's visual appearance is 'right'. Well, Applitools provides some great tools for that, whether you are using the Ultrafast Grid or the Classic runner.
 
+![Stay on target](/assets/images/stay-on-target.jpg){: .image-center }
+
 Both send their snapshots to the web dashboard. There, the snapshots can be reviewed and either approved or rejected. If you approve a snapshot, then it becomes the new baseline that all future snapshots are compared to. Once you get this process going you can review changes as they are detected, but the first step is to establish an approved baseline snapshot to compare against.
 
 Here is the process:
@@ -100,5 +114,7 @@ The baseline and change detection features I describe above are part of Applitoo
 Overall, my experience with Applitools has been a great one. It has made a big impact on my testing outlook, and I look forward to using it in the future.
 
 I feel like Applitools is such a compelling tool that I have written up a [step by step walk-through](https://jeremy-jarvis.github.io/applitools-demo/) of how to use it with Cucumber, Protractor, and Chai to test the visual appearance of Angular apps. I have also created a related [GitHub repo](https://github.com/jeremy-jarvis/applitools-demo) to demonstrate how those tools can be used together.
+
+[![Step-by-step Applitools Walk-Through](/assets/images/applitools-demo.jpg){: .image-center }](https://jeremy-jarvis.github.io/applitools-demo/)
 
 Happy testing!
