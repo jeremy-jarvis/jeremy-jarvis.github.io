@@ -9,11 +9,12 @@ share-description: "This is a brief description."
 
 Up until last year, I had a long-standing impression that automated visual testing was a difficult nut to crack. Simple screenshot comparison tools can be finicky, and doing it manually can take years off your life. Believe me, I know. It's rough. Figuring out how to verify an app's visual appearance can feel like being stuck between a rock and a hard place, with no easy answers in sight. 
 
-Well, hold on to your butts because I recently had a great experience with automated visual testing.
+Well, [hold on to your butts](https://youtu.be/3YlZmFD7-n8) because I recently had a great experience with automated visual testing.
 
 [![Hold on to your butts](/assets/images/hold-on-to-your-butts.jpeg){: .image-center }](https://youtu.be/3YlZmFD7-n8)
+*Above: Arnold (played by Samuel L. Jackson) from the film Jurassic Park, by Universal Pictures*
 
-During a recent project, I had the pleasure of using Applitools to verify the visual appearance of a web app. It was actually pretty awesome. Applitools made it possible for us to automate our visual testing. It greatly reduced how long it took to run our tests. This allowed us to keep tabs our app's appearance along the way and catch visual bugs soon after they were introduced.
+During a recent project, I had the pleasure of using [Applitools](https://applitools.com) to verify the visual appearance of a web app. It was actually pretty awesome. Applitools made it possible for us to automate our visual testing. It greatly reduced how long it took to run our tests. This allowed us to keep tabs our app's appearance along the way and catch visual bugs soon after they were introduced.
 
 I am writing this article to share a bit of my journey and give you a glimpse into what amazing things are possible with Applitools' visual testing suite.
 [![Applitools Logo](/assets/images/Applitools_Logo.jpg)](https://applitools.com){: .image-center }
@@ -60,7 +61,6 @@ Using the [classic runner](https://applitools.com/tutorials/protractor.html#run-
 
 Applitools classic runner is a great tool, and I wholeheartedly recommend that you check it out. That being said, I discovered some limitations that required me to upgrade to Applitools Ultrafast Grid. Most of the issues centered around limitations in IE's WebDriver.
 
-![IE Zombie](/assets/images/zomb-ie.png){: .image-right }
 > Oh IE... you relic of a different age... kept alive for reasons unknown to mortals. We have been cursed with supporting you. 
 
 When running my tests on IE, I discovered quirks that made it hard or impossible to capture full-page snapshots of our app. The problem was caused by a combination of our app's implementation and inflexibilities in the IE WebDriver. It is possible the the issues have been fixed by now, but be aware: If you plan to support IE, then it would be worth evaluating Applitools' IE support to ensure that it meets your needs.
@@ -105,8 +105,6 @@ Fixes could be made while the related code was fresh in people's minds. No more 
 
 At the beginning of this article I asked how we can actually know that a web app's visual appearance is "right". Well, Applitools provides some great tools for that, whether you are using the Ultrafast Grid or the classic runner. Both send their snapshots to the web dashboard.
 
-![Stay on target](/assets/images/stay-on-target.jpg){: .image-center }
-
 In the web dashboard, your snapshots can be reviewed and either approved or rejected. If you approve a snapshot, then it becomes the new baseline that all future snapshots are compared to. But an important first step is to establish an approved set of baselines at the beginning. Applitools is a great tool for detecting differences, but it cannot magically know whether or not your app matches your visual designs. That's something that you have to establish at the beginning by careful examination. Once you have established those baselines, they are treated as the expected appearance of your app. They are your definition of "right". This enables Applitools to detect differences going forward.
 
 Here is a process to consider:
@@ -125,7 +123,7 @@ The baseline and change detection features I describe above are part of Applitoo
 
 # Further Reading
 
-Overall, my experience with Applitools has been a great one. It has made a big impact on my testing outlook, and I look forward to using it in the future. If you'd like to read more about my experience using Applitools, check out [this case study](https://applitools.com/case-studies/sep/).
+Overall, my experience with [Applitools](https://www.applitools.com) has been a great one. It has made a big impact on my testing outlook, and I look forward to using it in the future. If you'd like to read more about my experience using Applitools, check out [this case study](https://applitools.com/case-studies/sep/).
 
 I feel like Applitools is such a compelling tool that I have written up a [step by step walk-through](https://jeremy-jarvis.github.io/applitools-demo/) of how to use it with Cucumber, Protractor, and Chai to test the visual appearance of Angular apps. I have also created a related [GitHub repo](https://github.com/jeremy-jarvis/applitools-demo) to demonstrate how those tools can be used together. I hope that you find these resources to be helpful.
 
