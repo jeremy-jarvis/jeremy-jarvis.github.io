@@ -1,12 +1,13 @@
 ---
 layout: page
 title: "Hi, I'm Jeremy"
-subtitle: "Senior Software Engineer / Quality Assurance /<br> Nature Lover"
+subtitle: "Senior Software Engineer / Software Tester / Nature Lover"
 permalink: /about-me/
-cover-img: "/assets/images/me-trek-cropped.jpg"
+cover-img: "/assets/images/about-me-landscape.jpg"
 show-avatar: false
 ---
 
+![Me](/assets/images/avatar-icon.jpg){: .image-right-with-margin } 
 I'm a Senior Software Engineer with more than 17 years of experience in a variety of domains. My focus is on building quality software that makes a meaningful impact on our world.
 
 I have worn various hats during the course of my career: Test Lead, Test Engineer, Software Engineer, and Project Lead.

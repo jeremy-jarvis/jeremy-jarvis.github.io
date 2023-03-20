@@ -12,3 +12,10 @@
 .with-border {
   border-style: solid;
 }
+
+.image-right-with-margin {
+  float: right;
+  margin-left: 20px;
+  margin-bottom: 20px;
+
+}
