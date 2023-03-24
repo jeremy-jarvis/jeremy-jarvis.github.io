@@ -8,7 +8,7 @@ show-avatar: false
 ---
 
 ![Me](/assets/images/avatar-icon.jpg){: .image-right-with-margin } 
-I'm a Senior Software Engineer with more than 15 years of experience and a focus on software testing. I build and test quality software that makes a meaningful impact on our world.
+I'm a Senior Software Engineer with more than [15 years](https://twitter.com/wwwsepcom/status/1631756219395321856?s=46) of experience and a focus on software testing. I build and test quality software that makes a meaningful impact on our world.
 
 I have worn various hats during the course of my career: Test Lead, Test Engineer, Software Engineer, and Project Lead.
 
