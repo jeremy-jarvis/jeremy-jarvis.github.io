@@ -7,7 +7,7 @@ subtitle: More than 15 years of experience in a variety of domains. Here are a f
 
 ## Personal Projects
 
-[**Descent Level Parser**](https://github.com/jeremy-jarvis/descent-tools) - A command-line tool that can parse the level file format from [Descent](https://en.wikipedia.org/wiki/Descent_(video_game)), a first-person 360-degree shooter video game from 1995 by Parallax Software and Interplay. The Level Parser reads the level geometry and outputs an [OBJ file](https://en.wikipedia.org/wiki/Wavefront_.obj_file) that can be imported into a 3D modeling tool such as Blender.
+[**Descent Level Parser**](https://github.com/jeremy-jarvis/descent-tools) - A command-line tool that can parse the level file format from [Descent](https://en.wikipedia.org/wiki/Descent_(video_game)), a first-person shooter video game from 1995 by Parallax Software and Interplay. The game provides players with six degrees of freedom, and was the first FPS to feature true 3D environments and enemies. I built this level parser to read the game's level geometry and output a [OBJ file](https://en.wikipedia.org/wiki/Wavefront_.obj_file) that can be imported into a 3D modeling tool such as Blender.
 
 [**Applitools Demo**](https://jeremy-jarvis.github.io/applitools-demo) - A walk-through of how to use [Applitools](https://applitools.com/) with Cucumber, Protractor, and Chai to verify the visual appearance of Angular apps. I've had good success using Applitools, and want to share what I have learned. [My walk-through](https://jeremy-jarvis.github.io/applitools-demo) is a micro-course on how these tools can be used together to create an awesome verification testing setup, and [my example repo](https://github.com/jeremy-jarvis/applitools-demo) demonstrates the result of that process.
 
