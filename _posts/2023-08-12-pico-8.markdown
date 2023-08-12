@@ -7,7 +7,10 @@ thumbnail-img: /assets/images/pico-8-hello.gif
 share-description: "An introduction to Pico-8, the all-in-one virtual console for making and playing retro games."
 ---
 
-I was introduced to computer games at a young age. My dad had a Commodore 64 that he used for writing and gaming, and I remember my 8-year-old self carefully selecting a game (on 5.25-inch floppy disk), inserting it into the drive, pushing down the lock bar thingy, and running that magical incantation, `load "*",8,1`, to fire it up. The games took a while to load, but once they did you could play such classics as [Battle Chess](https://en.wikipedia.org/wiki/Battle_Chess) and [The Bard's Tale](https://en.wikipedia.org/wiki/The_Bard%27s_Tale_(1985_video_game)). ![Commodore 64](/assets/images/Commodore-64.jpg)*The mighty Commodore 64*{: .image-center }
+I was introduced to computer games at a young age. My dad had a Commodore 128D that he used for writing and gaming, and I remember my 8-year-old self carefully selecting a game (on 5.25-inch floppy disk), inserting it into the drive, pushing down the lock bar thingy, and running that magical incantation, `load "*",8,1`, to fire it up. The games took a while to load, but once they did you could play such classics as [Battle Chess](https://en.wikipedia.org/wiki/Battle_Chess) and [The Bard's Tale](https://en.wikipedia.org/wiki/The_Bard%27s_Tale_(1985_video_game)). 
+
+![Commodore 128D](/assets/images/Commodore-128D.jpg){: .image-center }
+*The mighty Commodore 128D*{: .image-center }
 
 I tooled around a bit with BASIC, writing simple loops that infinitly printed "JEREMY" to the screen, and question/answer prompts that returned humorous reponses. But, I didn't get into game development. That was a bit beyond my interests at the time, and who wants to sit for hours typing in endless pages of code from computer magazines?
 
