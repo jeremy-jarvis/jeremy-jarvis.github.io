@@ -17,5 +17,8 @@
   float: right;
   margin-left: 20px;
   margin-bottom: 20px;
+}
 
+.post-preview .post-image {
+  filter: grayscale(30%);
 }

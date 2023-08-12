@@ -1,0 +1,60 @@
+---
+layout: post
+title:  "Pico-8: The Delightful All-in-One Retro Game Sandbox"
+date:   2023-08-12 01:00:00 -0500
+tags: [games, game development, game dev, retro, lua, sprites]
+thumbnail-img: /assets/images/pico-8-hello.gif
+share-description: "An introduction to Pico-8, the all-in-one virtual console for making and playing retro games."
+---
+
+I was introduced to computer games at a young age. My dad had a Commodore 64 that he used for writing and gaming, and I remember my 8-year-old self carefully selecting a game (on 5.25-inch floppy disk), inserting it into the drive, pushing down the lock bar thingy, and running that magical incantation, `load "*",8,1`, to fire it up. The games took a while to load, but once they did you could play such classics as [Battle Chess](https://en.wikipedia.org/wiki/Battle_Chess) and [The Bard's Tale](https://en.wikipedia.org/wiki/The_Bard%27s_Tale_(1985_video_game)). ![Commodore 64](/assets/images/Commodore-64.jpg)*The mighty Commodore 64*{: .image-center }
+
+I tooled around a bit with BASIC, writing simple loops that infinitly printed "JEREMY" to the screen, and question/answer prompts that returned humorous reponses. But, I didn't get into game development. That was a bit beyond my interests at the time, and who wants to sit for hours typing in endless pages of code from computer magazines?
+
+Over the years I grew to appreciate video/computer games as not just a fun hobby, but also as an art form. The idea of making my own game grew on me, but where would I start? It seemed like an exciting but challenging world to dive into, but there wasn't an obvious entrypoint. Then a few years ago I discovered Pico-8.
+
+## Enter Pico-8
+
+[Pico-8](https://www.lexaloffle.com/pico-8.php) is like a retro game emulator and editor, but for a console that never existed in physical form. You can load games, play them, and make your own games. Each game is stored as a tiny "cartridge" file that is easy to share with others. After loading a game, you can play it and even dive into the code. Imagine playing a game and then being able to jump right into it's code to see how it works and make your own changes! That's all possible with Pico-8.
+
+![Jelpi game](/assets/images/jelpi.png){: .image-center }
+*Jelpi, an example game that comes with Pico-8. Use the INSTALL_DEMOS command to install it and other demos.*{: .image-center }
+
+## A Self-Contained Game Dev Environment
+
+Have you ever thought about trying to make your own video game, but weren't sure where to start? It can be a bit intimidating. What tools will you need? How do you set them up to work together? What programming language, game engine, or SDK should you choose? There are a lot of options out there. One of Pico-8's strengths is that it provides everything you need in a simple integrated app. They've already decided on the language and tools, and integrated it all together to make it as simple to get started, but powerful in the long-term.
+
+![Pico-8 sprite editor](/assets/images/pico-8-sprite-editor.png){: .image-center }
+*Pico-8's built-in sprite editor*{: .image-center }
+
+## Limited On Purpose
+
+Instead of providing a game engine that can build massive 3D or 2D experiences in high-resolution, and all the complexities that come with that, Pico-8 sets in place purposeful limitations. Primarily, Pico-8 has a 128x128 pixel virtual display with a maximum of 16-colors, and 4-channel audio output. The data capacity is fixed at 32 kilobytes. These limitations bring welcome simplicity to those of us who are new to game develpment, but also a challenge for those who want to see how far they can stretch those limitations. For example, the original version of [Celeste](https://en.wikipedia.org/wiki/Celeste_(video_game)) was built using Pico-8, and it provides a fun and full game experience. All within 32k! You can [play it online here](https://www.lexaloffle.com/bbs/?pid=11722#p). 
+
+![Pico-8 Code Editor](/assets/images/pico-8-code-editor.png){: .image-center }
+*Pico-8's code editor*{: .image-center }
+
+For newbies like me, having less to work with is welcome. I can write some simple functions, and soon enough my character is moving around the screen. With a bit more code I can add boundaries to the play area and start experimenting with detecting collisions. Pico-8 provides just enough fundamental capabilities like drawing your game world and sprites to the screen, and leaves it to you to work out questions like "How will I detect when my player reaches a wall?" and "How will I make my player jump and be affected by gravity?" There's no "APPLY_GRAVITY" function, but you have the tools needed to create something like that yourself.
+
+## A Community Of Game Makers
+
+Pico-8 has a community of game makers, and there are a lot of games out there to try, hack, and learn from. Check out the [Pico-8 forms](https://www.lexaloffle.com/bbs/?cat=7) to see what people are posting. There's a lot out there. And even better, you can explore and play games right within Pico-8 itself using the "SPLORE" command. Simply type that, and you'll be able to view and play a lot of unique games made by people from all over the world. You can jump into their code and truly explore how they work, and save a local copy for yourself to play and reference. SPLORE is one of my favorite features.
+
+I have created [my own Pico-8 carts](https://github.com/jeremy-jarvis/pico-8). While they aren't full-fledged "games", they demonstrate gameplay mechanics like movement, jumping, collisions, and gravity. I have enjoyed the challenge of designing and implementing these fundamental mechanics from scratch.
+
+## Lua
+
+Pico-8 games are written in the [Lua](https://www.lua.org/about.html) programming language. It's a simple but powerful language, and is a good place to start for newbies that want to move beyond visual programming languages like Scratch. Sure, it isn't as popular as Python, but Lua is a [popular scripting language](https://en.wikipedia.org/wiki/List_of_applications_using_Lua) in use by game programmers, so learning it could help if you continue exploring game development. The concepts you learn in Lua will translate into Python and other languages you explore.
+
+## Fun and Satisfying
+
+The power and simplicity of Pico-8 proves to be a powerful combination, allowing me to code something up and try it out quickly. I can iterate on ideas and learn as I go, adding game elements one at a time. Sure, you might not end up selling the game you are making, but that's not the point of Pico-8. It's about exploring, learning, trying other people's games, and (optionally) sharing your creations with others. 
+
+
+## A Launchpad
+
+If you decide to move on to making games for wider distribution, there are industry-standard game engines like [Unity](https://unity.com/), [Unreal](https://www.unrealengine.com), and [Godot](https://godotengine.org/) to hop over to. Or, you might decide to dive deeper on sprites and pixel art with something like [Aseprite](https://www.aseprite.org/). Or, maybe you're a nuts-and-bolts type person, and would like to dig deeper into making your own game engine from scratch. The sky is the limit, and [Pico-8](https://www.lexaloffle.com/pico-8.php) is a great place to start exploring. 
+
+## Try It Out Now
+
+You don't even need to install Pico-8 to get started. You can try out games in your browser right now! Head over to [Pico-8](https://www.lexaloffle.com/pico-8.php) to play games that other people have created. Happy gaming!
