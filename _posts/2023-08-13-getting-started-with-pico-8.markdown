@@ -11,6 +11,6 @@ As a follow-up to [my last post](https://www.jeremyjarvis.net/2023/08/12/pico-8.
 
 I posted the article on my employer's blog, so head [over there](https://sep.com/blog/explore-game-development-with-pico-8/) for a step-by-step guide. I will show you where to get Pico-8, and the basics of creating your first game.
 
-![The sprite editor](/assets/images/pico-8-sprite-editor-smiley_256.png)
+[![The sprite editor](/assets/images/pico-8-sprite-editor-smiley.png){: .image-center }](https://sep.com/blog/explore-game-development-with-pico-8/)
 
 Happy gaming!
