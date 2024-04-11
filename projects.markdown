@@ -13,6 +13,8 @@ subtitle: More than 15 years of experience in a variety of domains. Here are a f
 
 ## Professional Experience Highlights
 
+**Software Engineer for Data Visualizations Project** - I built custom charts for Power BI reports using pbiviz, Highcharts, and TypeScript. The charts were backed by SQL views that queried data from blob storage. I also created Power Apps UI controls and connected them to Power Automate flows to update the underlying data sources. Developed an Azure Logic App that was wired to our data source via Azure Event Hub. When data changes were detected, the Logic App queried the data for specific patterns and reported them via a Microsoft Teams message. Read [my blog post](https://www.jeremyjarvis.net/2024/04/04/getting-started-with-custom-power-bi-charts.html) to learn more about creating custom charts for Power BI.
+
 **Test Lead / Engineer for Smart Home System** - I built an automated test suite to verify a touch screen interface and its interactions with the rest of the system. I planned multiple test suites to verify the system at different levels (unit, integration, component, system). I developed a detailed plan for how to test each release of the software based upon risks and product maturity.
 
 **Test Engineer for a Mobile Medical Website** - I created a new test strategy from the ground up and built verification and integration test suites for the entire system, including automated and manual test scripts. I crafted the test suites to serve both the client's quality policies and the technical constraints of the product. Achieved 100% requirements coverage. Test tools I used included [Playwright](https://playwright.dev/) and [Applitools](https://applitools.com/).
