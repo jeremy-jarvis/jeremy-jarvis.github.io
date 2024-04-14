@@ -3,7 +3,7 @@
 
 layout: home
 title: ""
-subtitle: "Hi! I'm a Senior Software Engineer with more than 15 years of experience. I build and test quality software that makes a meaningful impact on our world."
+subtitle: "Hi! I'm a Senior Software Engineer with more than 16 years of experience. I strive to build quality software that makes a meaningful impact."
 ---
 
 Check out my blog below and learn more [about me](/about-me) and the [projects](/projects) I have worked on.

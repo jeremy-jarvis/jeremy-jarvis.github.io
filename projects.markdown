@@ -2,7 +2,7 @@
 layout: page
 title: Projects
 permalink: /projects/
-subtitle: More than 15 years of experience in a variety of domains. Here are a few highlights.
+subtitle: More than 16 years of experience in a variety of domains. Here are a few highlights.
 ---
 
 ## Personal Projects
