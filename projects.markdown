@@ -5,12 +5,6 @@ permalink: /projects/
 subtitle: More than 16 years of experience in a variety of domains. Here are a few highlights.
 ---
 
-## Personal Projects
-
-[**Descent Level Parser**](https://github.com/jeremy-jarvis/descent-tools) - A command-line tool that can parse the level file format from [Descent](https://en.wikipedia.org/wiki/Descent_(video_game)), a first-person shooter video game from 1995 by Parallax Software and Interplay. The game provides players with six degrees of freedom, and was the first FPS to feature true 3D environments and enemies. I built this level parser to read the game's level geometry and output a [OBJ file](https://en.wikipedia.org/wiki/Wavefront_.obj_file) that can be imported into a 3D modeling tool such as Blender.
-
-[**Applitools Demo**](https://jeremy-jarvis.github.io/applitools-demo) - A walk-through of how to use [Applitools](https://applitools.com/) with Cucumber, Protractor, and Chai to verify the visual appearance of Angular apps. I've had good success using Applitools, and want to share what I have learned. [My walk-through](https://jeremy-jarvis.github.io/applitools-demo) is a micro-course on how these tools can be used together to create an awesome verification testing setup, and [my example repo](https://github.com/jeremy-jarvis/applitools-demo) demonstrates the result of that process.
-
 ## Professional Experience Highlights
 
 **Software Engineer for Data Visualizations Project** - I built custom charts for Power BI reports using pbiviz, Highcharts, and TypeScript. The charts were backed by SQL views that queried data from blob storage. I also created Power Apps UI controls and connected them to Power Automate flows to update the underlying data sources. Developed an Azure Logic App that was wired to our data source via Azure Event Hub. When data changes were detected, the Logic App queried the data for specific patterns and reported them via a Microsoft Teams message. Read [my blog post](https://www.jeremyjarvis.net/2024/04/04/getting-started-with-custom-power-bi-charts.html) to learn more about creating custom charts for Power BI.
@@ -24,3 +18,9 @@ subtitle: More than 16 years of experience in a variety of domains. Here are a f
 **Software Engineer for a Fleet Management Portal** - I was part of a small team that developed a [React](https://reactjs.org/) app for tracking and optimizing the usage of heavy machinery across an entire fleet.
 
 **Software Engineer for a Race Car Aerodynamic Modeling** - I was part of a small team that developed an app to model the aerodynamic properties of a race car, such as downforce and drag. We were able to quickly turn around a solution that met our client's goals, and helped them win! Built using C# and WPF. See [this overview](https://sep.com/our-work/case-study/aerodynamic-modeling-and-simulation-application/) for a lot more details.
+
+## Personal Projects
+
+[**Descent Level Parser**](https://github.com/jeremy-jarvis/descent-tools) - A command-line tool that can parse the level file format from [Descent](https://en.wikipedia.org/wiki/Descent_(video_game)), a first-person shooter video game from 1995 by Parallax Software and Interplay. The game provides players with six degrees of freedom, and was the first FPS to feature true 3D environments and enemies. I built this level parser to read the game's level geometry and output a [OBJ file](https://en.wikipedia.org/wiki/Wavefront_.obj_file) that can be imported into a 3D modeling tool such as Blender.
+
+[**Applitools Demo**](https://jeremy-jarvis.github.io/applitools-demo) - A walk-through of how to use [Applitools](https://applitools.com/) with Cucumber, Protractor, and Chai to verify the visual appearance of Angular apps. I've had good success using Applitools, and want to share what I have learned. [My walk-through](https://jeremy-jarvis.github.io/applitools-demo) is a micro-course on how these tools can be used together to create an awesome verification testing setup, and [my example repo](https://github.com/jeremy-jarvis/applitools-demo) demonstrates the result of that process.
