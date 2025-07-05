@@ -46,7 +46,7 @@ social-network-links:
 
 # If you want to show a link to an RSS in the footer, add the site description here.
 # If you don't want to show an RSS link, remove the following line.
-rss-description: Homepage of Jeremy Jarvis, an experienced Software Engineer. His focus is on making a meaningful impact with quality software and clear communication.
+rss-description: Homepage of Jeremy Jarvis, an experienced Leader and Software Engineer. His focus is on making a meaningful impact with quality software and clear communication.
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
@@ -62,7 +62,7 @@ feed_show_excerpt: true
 feed_show_tags: true
 
 # The keywords to associate with your website, for SEO purposes
-keywords: "software,engineer,developer,quality,qa,testing,verification,applitools"
+keywords: "software,engineer,developer,leader,quality,qa,testing,verification,applitools"
 
 # Ruby Date Format to show dates of posts
 date_format: "%B %-d, %Y"
